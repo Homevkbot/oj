@@ -1,0 +1,11 @@
+method,class,file,line,api_used,purpose,condition,confidence,evidence
+scheduleWithFixedDelay(o3),boot,boot.java,unknown,ScheduledThreadPoolExecutor,periodic check,100s interval,ПОДТВЕРЖДЕНО,"Периодическая проверка обновления"
+c(Context),boot,boot.java,unknown,MessageDigest + PackageManager,SHA-256 signature hash,always,ПОДТВЕРЖДЕНО,"Вычисление хэша подписи"
+b(Context),boot,boot.java,unknown,String comparison,signature verification,always,ПОДТВЕРЖДЕНО,"Сравнение с эталоном"
+e(String),boot,boot.java,unknown,MessageDigest,MD5 hash,always,ПОДТВЕРЖДЕНО,"MD5 хэш строки"
+pusk(String),boot,boot.java,unknown,JNI → libche.so,native signature check,always,ПОДТВЕРЖДЕНО,"Native проверка подписи"
+a(),boot,boot.java,unknown,JSONObject + SharedPreferences,build config JSON,always,ВЫСОКАЯ УВЕРЕННОСТЬ,"Формирование JSON конфигурации"
+f(),boot,boot.java,unknown,Intent + MyCarReceiver,trigger car event,always,ПОДТВЕРЖДЕНО,"Запуск обработки событий"
+Ping(),b.r(),boot.java,unknown,network check,connectivity test,ВЫСОКАЯ УВЕРЕННОСТЬ,"Проверка соединения"
+t(Uri),APInAct,APInAct.java,unknown,ContentResolver,copy APK file,on update,ПОДТВЕРЖДЕНО,"Копирование APK для обновления"
+u(ArrayList),APInAct,APInAct.java,unknown,PackageInstaller,install APK,on update,ПОДТВЕРЖДЕНО,"Установка обновлённого APK"

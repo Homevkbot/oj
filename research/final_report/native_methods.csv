@@ -1,0 +1,3 @@
+java_class,method,jni_signature,native_library,native_address,result,confidence,evidence
+com.example.navistart.boot,pusk,(Ljava/lang/String;)Z,libche.so,unknown,boolean,ПОДТВЕРЖДЕНО,"boot.java: public native boolean pusk(String str)"
+com.example.navistart.MyCarReceiver,m3643p,(Ljava/lang/String;Z)Z,libche.so,unknown,boolean,ПОДТВЕРЖДЕНО,"MyCarReceiver.java: public native boolean m3643p(String str, boolean z)"

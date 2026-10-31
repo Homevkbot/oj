@@ -1,0 +1,9 @@
+mechanism,class_or_library,source,destination,condition,confidence,evidence
+JNA,libjnidispatch.so,APK lib/,Runtime,dynamic function call,ПОДТВЕРЖДЕНО,"Библиотека присутствует в APK"
+ONNX Runtime,ai.onnxruntime,APK lib/,Runtime,model inference,ПОДТВЕРЖДЕНО,"MyCarReceiver.java: ai.onnxruntime.a.u(str)"
+Assets loading,AssetManager,APK assets/,Runtime,file loading,ВЕРОЯТНО,"Каталог assets/ присутствует"
+DexClassLoader,unknown,unknown,unknown,dynamic DEX loading,НЕ ОБНАРУЖЕНО,"Не найден в jadx_full"
+PathClassLoader,unknown,unknown,unknown,dynamic class loading,НЕ ОБНАРУЖЕНО,"Не найден в jadx_full"
+InMemoryDexClassLoader,unknown,unknown,unknown,in-memory DEX,НЕ ОБНАРУЖЕНО,"Не найден в jadx_full"
+Class.forName,unknown,unknown,unknown,reflection loading,НЕ ПОДТВЕРЖДЕНО,"Возможен в smali"
+JNI loading,libche.so,APK lib/,Runtime,native method binding,ПОДТВЕРЖДЕНО,"Native методы объявлены"

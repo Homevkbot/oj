@@ -1,0 +1,10 @@
+library_name,architecture,size_bytes,purpose,has_jni_onload,has_register_natives,exports,confidence,notes
+libche.so,arm64-v8a,333440,Основная JNI-библиотека,unknown,unknown,Java_com_example_navistart_boot_pusk;Java_com_example_navistart_MyCarReceiver_m3643p,ВЫСОКАЯ УВЕРЕННОСТЬ,"Требует бинарный анализ для подтверждения экспортов"
+libmodulese.so,arm64-v8a,1043712,Модули управления автомобилем,unknown,unknown,unknown,ГИПОТЕЗА,"Связан с BezFunEnum/HFunEnum"
+libjnidispatch.so,arm64-v8a,157720,JNA dispatch,unknown,unknown,dlopen;dlsym;ffi_call,ПОДТВЕРЖДЕНО,"Стандартная JNA библиотека"
+libonnxruntime.so,arm64-v8a,32120992,ONNX ML Runtime,unknown,unknown,OrtSession*;OrtEnv*,ПОДТВЕРЖДЕНО,"Используется через ai.onnxruntime.a.u()"
+libonnxruntime4j_jni.so,arm64-v8a,83224,ONNX JNI bridge,unknown,unknown,Java_ai_onnxruntime_*,ПОДТВЕРЖДЕНО,"JNI мост для ONNX Java API"
+libvosk.so,arm64-v8a,8862928,Vosk Speech Recognition,unknown,unknown,unknown,ВЫСОКАЯ УВЕРЕННОСТЬ,"Оффлайн распознавание речи"
+libwg-go.so,arm64-v8a,2751824,WireGuard Go implementation,unknown,unknown,unknown,ПОДТВЕРЖДЕНО,"Go-реализация через gomobile"
+libwg-quick.so,arm64-v8a,29560,WireGuard Quick Config,unknown,unknown,unknown,ПОДТВЕРЖДЕНО,"Утилиты конфигурации"
+libwg.so,arm64-v8a,74776,WireGuard Core C,unknown,unknown,unknown,ПОДТВЕРЖДЕНО,"C-реализация WireGuard"

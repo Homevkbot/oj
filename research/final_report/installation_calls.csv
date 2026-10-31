@@ -1,0 +1,13 @@
+method,class,file,line,api_used,mode,condition,confidence,evidence
+u(ArrayList),APInAct,APInAct.java,unknown,PackageInstaller.Session,both,always,ПОДТВЕРЖДЕНО,"Основной метод установки"
+t(Uri),APInAct,APInAct.java,unknown,ContentResolver + FileOutputStream,n/a,always,ПОДТВЕРЖДЕНО,"Копирование файла из Uri"
+s(),APInAct,APInAct.java,unknown,SharedPreferences + protobuf,n/a,license check,ВЫСОКАЯ УВЕРЕННОСТЬ,"Проверка лицензии"
+onCreate(),APInAct,APInAct.java,unknown,AppCompatActivity,n/a,always,ПОДТВЕРЖДЕНО,"Инициализация UI"
+onDestroy(),APInAct,APInAct.java,unknown,unregisterReceiver,n/a,always,ПОДТВЕРЖДЕНО,"Очистка ресурсов"
+onReceive(),InstallResultReceiver,InstallResultReceiver.java,unknown,BroadcastReceiver,n/a,install result,ПОДТВЕРЖДЕНО,"Обработка результата установки"
+createSession(),PackageInstaller,APInAct.java,unknown,PackageInstaller API,both,always,ПОДТВЕРЖДЕНО,"Создание сессии установки"
+openSession(),PackageInstaller,APInAct.java,unknown,PackageInstaller API,both,always,ПОДТВЕРЖДЕНО,"Открытие сессии"
+openWrite(),PackageInstaller.Session,APInAct.java,unknown,Session API,both,always,ПОДТВЕРЖДЕНО,"Запись APK в сессию"
+fsync(),PackageInstaller.Session,APInAct.java,unknown,Session API,both,always,ПОДТВЕРЖДЕНО,"Синхронизация данных"
+commit(),PackageInstaller.Session,APInAct.java,unknown,Session API + PendingIntent,both,always,ПОДТВЕРЖДЕНО,"Commit с подтверждением"
+isDeviceOwnerApp(),DevicePolicyManager,APInAct.java,unknown,DevicePolicyManager API,n/a,always,ПОДТВЕРЖДЕНО,"Проверка Device Owner"
