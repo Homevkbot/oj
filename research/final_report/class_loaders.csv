@@ -1,0 +1,5 @@
+class_loader_type,class_name,dex_source,opt_dir,parent_loader,target_class,condition,confidence,evidence
+JNA,libjnidispatch.so,n/a,n/a,BootClassLoader,dynamic functions,runtime,ПОДТВЕРЖДЕНО,"JNA библиотека в APK"
+PathClassLoader,default,n/a,n/a,BootClassLoader,app classes,always,ПОДТВЕРЖДЕНО,"Стандартный Android ClassLoader"
+DexClassLoader,not found,not found,not found,not found,not found,not found,НЕ ОБНАРУЖЕНО,"Не найден в jadx_full"
+ONNX,ai.onnxruntime,libonnxruntime4j_jni.so,n/a,PathClassLoader,ML models,runtime,ПОДТВЕРЖДЕНО,"ONNX Runtime в APK"
